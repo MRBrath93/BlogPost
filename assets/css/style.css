@@ -1,6 +1,12 @@
 /* Variables */
 :root {
-    --DarkGrey: #a5A5A5;
+    --DarkBlue: #001f3d;
+    --Blue: #045174;
+    --White: #ffffff;
+    --LightOrange: #d89c60;
+    --Orange: #e87a00;
+
+    --ElementMargin: 1rem;
     /* Angiv vairabler så som farver, størrelser på margin, padding osv. */
 }
 
@@ -17,7 +23,8 @@ html {
 
 body {
     height: 100svh;
-    /* Small viewport height */
+    background-color: var(--DarkBlue);
+    color: var(--White);
 }
 
 img,
@@ -31,8 +38,7 @@ svg {
 }
 
 /* Typografi */
-@import url("");
-/* Tilføj googlefonts url til fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 h1,
 h2,
@@ -41,11 +47,13 @@ h4,
 h5,
 h6 {
     text-wrap: balance;
+    font-family: "Roboto", serif;
 }
 
 p {
     max-width: 75ch;
     text-wrap: pretty;
+    font-family: "Montserrat", serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -53,4 +61,39 @@ p {
         scroll-behavior: smooth;
         scroll-padding-top: 3rem;
     }
+}
+
+
+
+
+/* ========== NAVIGATION ========== */
+/* ================================ */
+
+header a {
+    text-decoration: none;
+    color: var(--White);
+    font-family: "Roboto", serif;
+}
+
+header li {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+nav {
+    height: 2rem;
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+}
+
+.pageTitle {
+    text-align: center;
+    height: 4rem;
 }
