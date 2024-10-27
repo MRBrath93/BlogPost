@@ -16,7 +16,7 @@
     <!--Kilde: Fonticons, Inc. 2022, Font awesome. [Online]. Available at:
     https://fontawesome.com/ [Accessed 12. januar 2024].  -->
 
-    <link rel="icon" href="" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="./assets/img/keyboard-regular.svg" sizes="any" type="image/svg+xml">
     <!-- Tilføj favicon - Kan hentes ned fra fontawsome -->
 
     <title>My Blog</title>
@@ -25,27 +25,169 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="mainNav">
             <ul>
                 <li><a href="#">Frontpage</a></li>
                 <li><a href="#">HTML Basics</a></li>
                 <li><a href="#">CSS Tricks</a></li>
                 <li><a href="#">JavaScript Tutorials</a></li>
                 <li><a href="#">Blog</a></li>
+                <button id="theme-toggle">Skift Tema</button>
             </ul>
         </nav>
         <div class="pageTitle">
             <h1>My Frontend Universe</h1>
         </div>
     </header>
-    <aside>
-
-    </aside>
     <main>
+        <nav class="subNav">
+            <ul>
+                <li><a href="#Figure">Figure in HTML5</a></li>
+                <li><a href="#Semantic">Variables in CSS</a></li>
+            </ul>
+        </nav>
 
+        <div class="blogSection">
+            <article id="Figure">
+                    <h2>Understanding &lt;figure&gt; and &lt;figcaption&gt; in HTML5</h2>
+                    <p class="BoldSkew">
+                        In this post, we'll explore the HTML5  &lt;figure&gt; tag and its companion &lt;figcaption&gt;, highlighting how they enhance the semantic structure and accessibility of your web content.
+                    </p>
+                    <figure>
+                        <img src="./assets/img/html5-figure.png" alt="An illustration displaying the logo of HTML5 and text that says HTML and  &lt;figure&gt;">
+                        <figcaption>In this post, we'll explore the HTML5  &lt;figure&gt; tag and its companion &lt;figcaption&gt;, highlighting how they enhance the semantic structure and accessibility of your web content.</figcaption>
+                    </figure>
+    
+                    <section>
+                        <h3>Introduction</h3>
+                        <p>
+                            In HTML5, structuring content in a meaningful way is essential for both accessibility and search engine optimization. Two valuable tags that help achieve this are  &lt;figure&gt; and &lt;figcaption&gt;. These tags allow developers to add media elements such as images, diagrams, or illustrations, alongside clear descriptions that enhance the user´s understanding of the content.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>What is &lt;figure&gt;?</h3>
+                        <p>
+                            The &lt;figure&gt; tag is used to group self-contained media content, like images, diagrams, or code snippets. Unlike regular images, content within &lt;figure&gt; is associated with the surrounding text but can stand alone if required. This flexibility makes it suitable for images that add value but don’t disrupt the main content if removed.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Using &lt;figcaption&gt;</h3>
+                        <p>
+                            A &lt;figcaption&gt; tag works in tandem with &lt;figure&gt; to provide a caption or description. Placing &lt;figcaption&gt; inside &lt;figure&gt; ensures the media is clearly explained, making it more accessible to screen readers and improving the content’s semantic value.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Benefits of &lt;figure&gt; and &lt;figcaption&gt;</h3>
+                        <ol>
+                            <li>
+                                <h4>Accessibility:</h4>
+                                <p>
+                                    Screen readers can identify the caption and image as connected elements, improving accessibility for visually impaired users.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>SEO:</h4>
+                                <p>Search engines can use the &lt;figcaption&gt; content to understand the relevance of the media within the context of the page.</p>
+                            </li>
+                            <li>
+                                <h4>Structure and Clarity:</h4>
+                                <p>With &lt;figure&gt;, you can add structured descriptions to any media, making your HTML cleaner and more organized.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>When to Use &lt;figure&gt; and &lt;figcaption&gt;</h3>
+                        <p>
+                            Consider using &lt;figure&gt; for any visual content that enriches your article or post. Whether it’s a photo, diagram, code snippet, or video, pairing it with &lt;figcaption&gt; will make your content more informative and engaging.
+                        </p>
+                    </section>
+                </article>
+                <article id="Semantic">
+                    <h2>Understanding Semantic Structure in HTML</h2>
+                    <h5></h5>
+                    <figure>
+                        <img src="./assets/img/html5Semantic.jpg" alt="">
+                        <figcaption>HTML5 semantic elements provide meaning and structure to web content, improving accessibility and SEO by clearly defining the roles of different parts of a webpage.</figcaption>
+                    </figure>
+                    <section>     
+                        <h3>Introduction</h3>
+                        <p>
+                            In web development, the concept of semantic structure is crucial for creating accessible and meaningful content. Semantic HTML refers to the use of HTML markup that conveys meaning about the content contained within, rather than simply how it looks. This practice not only improves the accessibility of web pages but also enhances search engine optimization (SEO) and overall user experience.
+                        </p>
+                    </section>
+                    <section>
+                            <h3>What is Semantic HTML?</h3>
+                            <p>
+                                Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way. For example, using &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, and &lt;aside&gt; tags helps convey the structure of the document. These elements make it easier for screen readers and other assistive technologies to interpret the content and help search engines understand the context of the information.
+                            </p>
+                    </section>
+                    <section>
+                        <h3>Benefits of Semantic HTML</h3>
+                        <ol>
+                            <li>
+                                <h4>Improved Accessibility:</h4>
+                                <p>
+                                    By using semantic tags, you provide context for assistive technologies. Screen readers can announce the type of content being read, which helps visually impaired users navigate through your site more easily.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Easier Maintenance:</h4>
+                                <p>
+                                    Search engines favor semantic HTML because it helps them understand the hierarchy and context of your content. This understanding can improve your page ranking in search results.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Theming and Customization:</h4>
+                                <p>
+                                    Using a clear and structured approach makes it easier for developers to maintain and update code over time. Other developers (or even yourself) can quickly grasp the structure and purpose of the content.
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Conclusion</h3>
+                        <p>
+                            Adopting a semantic structure in HTML is not just a trend; it’s a fundamental practice for modern web development. By using semantic elements, you create a more accessible, SEO-friendly, and maintainable website. As web developers, we have the responsibility to ensure that our content is not only visually appealing but also meaningful and easy to navigate for all users. Embracing semantic HTML is a step towards a more inclusive web.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Conclusion</h3>
+                        <p>
+                            CSS variables offer a powerful way to enhance styling flexibility and code maintainability. As a best practice, always define your key styling values as variables to make your CSS more manageable and scalable. This small change in your workflow will have a big impact on the ease of maintaining your CSS in the long run.
+                        </p>
+                    </section>
+                </article>
+        </div>
+        <aside>
+            <div>
+                <h3>About Me</h3>
+                <img src="./assets/img/Profile.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempore magnam beatae alias voluptatibus voluptatem dolor! Ipsum a expedita aspernatur.</p>
+            </div>
+            <div>
+                <h3>Follow Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem?</p>
+            </div>
+        </aside>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footerLinks">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="socialMedia">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; <span id="year"></span> My Fronted Universe. All rights reserved.</p>
+        </div>
     </footer>
+    
 </body>
 </html>
